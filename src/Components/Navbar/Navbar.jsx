@@ -8,10 +8,14 @@ const Navbar = () => {
   const handleClick = () => setClick(!click);
   const closeMenu = () => setClick(false);
 
+  const goto = () => {
+    window.location.href = "/";
+  };
+
   return (
     <nav className="navbar">
       <div className="logo">
-        <h2>Construction Co.</h2>
+        <h2 onClick={goto}>Construction Co.</h2>
       </div>
       <div className="menu-icon" onClick={handleClick}>
         {click ? <FaTimes size={30} /> : <FaBars size={30} />}
