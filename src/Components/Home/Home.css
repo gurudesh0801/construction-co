@@ -1,0 +1,117 @@
+/* Home.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.hero-split {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(rgba(22, 22, 22, 0.321), rgba(27, 27, 27, 0.361)),
+    url("../../assets/images/img1.jpg") center/cover no-repeat;
+  padding: 20px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative; /* Position relative for the overlay */
+  overflow: hidden; /* Hide overflow for animations */
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 1000px; /* Limit the width for better readability */
+  padding: 20px; /* Add some padding around the content */
+  animation: fadeIn 1s ease-in-out; /* Fade-in animation for content */
+}
+
+.hero-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  animation: slideIn 1s ease-in-out; /* Slide-in animation for title */
+}
+
+.hero-title span {
+  color: #007bff; /* Highlighted color for emphasis */
+  text-shadow: 0 0 2px black;
+}
+
+.hero-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  animation: slideIn 1s ease-in-out 0.3s; /* Slide-in animation for subtitle */
+}
+
+.cta-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  background-color: #007bff; /* Primary color for the button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.3s; /* Transition for button */
+  animation: pulse 1.5s infinite; /* Pulse animation for button */
+}
+
+.cta-btn:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05); /* Scale up */
+  }
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .hero-split {
+    flex-direction: row; /* Side-by-side on larger screens */
+  }
+
+  .hero-content {
+    text-align: left; /* Align text left on larger screens */
+  }
+
+  .hero-title {
+    font-size: 3rem; /* Increase title size */
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem; /* Increase subtitle size */
+  }
+}
