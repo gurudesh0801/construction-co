@@ -58,7 +58,7 @@ img {
   width: 100%;
   max-width: 600px;
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 0px;
   animation: slideInBottom 1.5s ease-in-out;
 }
 
@@ -76,10 +76,16 @@ img {
 
   .hero-title {
     font-size: 3.5rem;
+    margin-left: 2rem; /* Only apply margin-left for larger screens */
   }
 
   .hero-subtitle {
     font-size: 1.8rem;
+    margin-left: 2rem; /* Only apply margin-left for larger screens */
+  }
+
+  .cta-btn {
+    margin-left: 2rem; /* Only apply margin-left for larger screens */
   }
 
   img {
