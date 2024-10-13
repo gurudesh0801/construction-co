@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import img from "../../assets/images/img3.png";
 
 const Home = () => {
   return (
@@ -8,16 +9,14 @@ const Home = () => {
         <h1 className="hero-title">
           <span>Welcome to </span>
           <br />
-          Innovating Construction
+          Innovating Construction-co
         </h1>
-        <p className="hero-subtitle">
-          We build the structures that shape tomorrow. Modern, efficient, and
-          sustainable solutions for all your construction needs.
-        </p>
-        <a href="#services" className="cta-btn">
+        <p className="hero-subtitle">Where Innovation Builds Your Future</p>
+        <a href="/services" className="cta-btn">
           Explore Our Services
         </a>
       </div>
+      <img src={img} alt="" />
     </section>
   );
 };
