@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -14,19 +15,19 @@ const Footer = () => {
           <h3>Quick Links</h3>
           <ul>
             <li>
-              <a href="#home">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="#about">About Us</a>
+              <Link to="/aboutus">About Us</Link>
             </li>
             <li>
-              <a href="#services">Services</a>
+              <Link to="/services">Services</Link>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <Link to="/projects">Projects</Link>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
@@ -35,30 +36,30 @@ const Footer = () => {
           <h3>Contact Us</h3>
           <p>
             Email:{" "}
-            <a href="mailto:info@constructioncompany.com">
+            <Link to="mailto:info@constructioncompany.com">
               info@constructioncompany.com
-            </a>
+            </Link>
           </p>
           <p>
-            Phone: <a href="tel:+11234567890">(123) 456-7890</a>
+            Phone: <Link to="tel:+11234567890">(123) 456-7890</Link>
           </p>
         </div>
 
         <div className="footer-social">
           <h3>Follow Us</h3>
           <div className="social-icons">
-            <a href="#" aria-label="Facebook">
+            <Link to="#" aria-label="Facebook">
               <i className="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" aria-label="Twitter">
+            </Link>
+            <Link to="#" aria-label="Twitter">
               <i className="fab fa-twitter"></i>
-            </a>
-            <a href="#" aria-label="Instagram">
+            </Link>
+            <Link to="#" aria-label="Instagram">
               <i className="fab fa-instagram"></i>
-            </a>
-            <a href="#" aria-label="LinkedIn">
+            </Link>
+            <Link to="#" aria-label="LinkedIn">
               <i className="fab fa-linkedin-in"></i>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
