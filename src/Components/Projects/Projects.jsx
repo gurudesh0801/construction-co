@@ -1,5 +1,11 @@
 import React from "react";
 import "./Projects.css";
+import img1 from "../../assets/images/img4.jpg";
+import img2 from "../../assets/images/img5.jpg";
+import img3 from "../../assets/images/img6.jpg";
+import img4 from "../../assets/images/img7.jpg";
+import img5 from "../../assets/images/img8.jpg";
+import img6 from "../../assets/images/img9.jpg";
 
 const Projects = () => {
   return (
@@ -14,10 +20,7 @@ const Projects = () => {
         <div className="projects-grid">
           <div className="project-card">
             <div className="project-image">
-              <img
-                src="https://via.placeholder.com/400x300"
-                alt="Modern Office Building"
-              />
+              <img src={img1} alt="Modern Office Building" />
             </div>
             <div className="project-details">
               <h3 className="project-title">Modern Office Building</h3>
@@ -30,10 +33,7 @@ const Projects = () => {
 
           <div className="project-card">
             <div className="project-image">
-              <img
-                src="https://via.placeholder.com/400x300"
-                alt="Residential Complex"
-              />
+              <img src={img2} alt="Residential Complex" />
             </div>
             <div className="project-details">
               <h3 className="project-title">Residential Complex</h3>
@@ -46,10 +46,7 @@ const Projects = () => {
 
           <div className="project-card">
             <div className="project-image">
-              <img
-                src="https://via.placeholder.com/400x300"
-                alt="Luxury Resort"
-              />
+              <img src={img3} alt="Luxury Resort" />
             </div>
             <div className="project-details">
               <h3 className="project-title">Luxury Resort</h3>
@@ -62,10 +59,7 @@ const Projects = () => {
 
           <div className="project-card">
             <div className="project-image">
-              <img
-                src="https://via.placeholder.com/400x300"
-                alt="Bridge Infrastructure"
-              />
+              <img src={img4} alt="Bridge Infrastructure" />
             </div>
             <div className="project-details">
               <h3 className="project-title">Bridge Infrastructure</h3>
@@ -78,10 +72,7 @@ const Projects = () => {
 
           <div className="project-card">
             <div className="project-image">
-              <img
-                src="https://via.placeholder.com/400x300"
-                alt="Eco-Friendly Homes"
-              />
+              <img src={img5} alt="Eco-Friendly Homes" />
             </div>
             <div className="project-details">
               <h3 className="project-title">Eco-Friendly Homes</h3>
@@ -94,10 +85,7 @@ const Projects = () => {
 
           <div className="project-card">
             <div className="project-image">
-              <img
-                src="https://via.placeholder.com/400x300"
-                alt="Urban Shopping Mall"
-              />
+              <img src={img6} alt="Urban Shopping Mall" />
             </div>
             <div className="project-details">
               <h3 className="project-title">Urban Shopping Mall</h3>
